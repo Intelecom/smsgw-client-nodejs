@@ -1,6 +1,6 @@
 ## Build status ##
 
-Travis: 
+Travis: [![Build Status](https://travis-ci.org/Intelecom/smsgw-client-nodejs.svg?branch=travis)](https://travis-ci.org/Intelecom/smsgw-client-nodejs)
 
 ## npm module ##
 
