@@ -1,0 +1,30 @@
+{
+  "name": "intelecom-smsgw-client",
+  "version": "1.0.0-rc1",
+  "description": "Node.js client library for the Intelecom Group AS SMS gateway",
+  "keywords": [
+    "intelecom",
+    "sms",
+    "gateway"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --bail"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "2.2.5",
+    "nock": "2.6.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Intelecom/smsgw-client-nodejs"
+  },
+  "contributors": [
+    {
+      "name": "Morten Trydal",
+      "url": "https://github.com/trydis"
+    }
+  ]
+}
