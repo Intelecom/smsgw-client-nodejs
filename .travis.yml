@@ -1,4 +1,11 @@
 language: node_js
-
 node_js:
-  - "node"
+- node
+deploy:
+  provider: npm
+  email: support.interactive@intele.com
+  api_key:
+    secure: LVuIUT2yzVwB7bDH9tIYc7lpj7kuGpuKbSrTDoVUoeCTjq1hAaYB4AIg7dN7KrqnO32/T4pqcoN3+gWjzS8Lb+DqUCS15AqQMWlM/0Y5/FtZwWaj14PKdQR8TcSHxVg9ye0hyf3zMjxeaPS4RLgwHfrKd8XIRQuNJ57rkVhcYK51juTJo3MmDzfqTetPacy0orSV8GbbpeNAuC+oYvP8bhTtFsVVuCPp3sXSYt17xDrydzxt/zDwM3yDAoHwgr56q+aG+mwc3JrCIG8L+v5SusRfoH2ifYpJXEfMoKpfLKdD+yt3P7qWxOM7ZNjOTK89WFXshp4dL51Ia3xLMXnipoIp5JnBDo126Gn8xWxP9UQy9Lk1o3UuOv+o3ucHFGgDd/rQN6429fnu5ueceJ3IHiITkNTcOVGlriTWrr5QnOJfyDubhgaNGbJxJhirzRAwU82yTzQ7HjQl1/HiJ/uaQsTZVuAydzMMPVfBnX52v3Ospns2d9+M1kHo9aY0h1tXyGm24q7oCA5hLIuhtR34EWqJBW9jSJE4GeGKgj3wRTjdLQ8Y1wEaWFnW8o4Nh66Q2+J/fNG/z2LcFJEc0NAkSlh9Lvc/hTJgDLRUlgGA8Dyo/oSzeXZKmosPzgo7YFVQ33/eVUeFC2Po/SjX5wT69Kbc0v4UrIsb6MpehFgg1d0=
+  on:
+    tags: true
+    repo: Intelecom/smsgw-client-nodejs
