@@ -68,4 +68,25 @@ describe('SmsGatewayClient', function () {
     });
   });
 
+  describe('when sending message(s)', function () {
+      it('should calculate the correct content length', function (done) {
+          var dummyGwRequestWithContent = dummyGwRequest;
+          var content = 'This is a test with æ, ø and å';
+          dummyGwRequestWithContent.message = [{ content: content }];
+          var scope = nock(uri)
+            .matchHeader('Content-Length', 103)
+            .post(path, dummyGwRequestWithContent)
+            .reply(200, dummyGwResponse);
+
+          client.send([{ content: content }],
+            function () {
+              assert.fail();
+            },
+            function () {
+              scope.done();
+              done();
+            });
+      });
+  });
+
 });
